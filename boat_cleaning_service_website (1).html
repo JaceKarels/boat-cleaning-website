@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SparkleBoat | Boat Cleaning Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #1f2937;
+    }
+
+    /* NAVBAR */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h2 {
+      margin: 0;
+      color: #0ea5e9;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #374151;
+      font-weight: bold;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 85vh;
+      background: linear-gradient(rgba(10,37,64,0.6), rgba(10,37,64,0.6)),
+      url('https://images.unsplash.com/photo-1567899378494-47b22a2ae96a') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 0 60px;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 10px 0;
+      line-height: 1.2;
+    }
+
+    .highlight {
+      color: #f59e0b;
+    }
+
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: #f59e0b;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 70px 20px;
+      text-align: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 12px;
+      border-radius: 6px;
+      border: 1px solid #d1d5db;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 14px;
+      background: #0ea5e9;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>⚓ SparkleBoat</h2>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="badge">✨ Premium Marine Care</div>
+    <h1>Keep Your Vessel <br><span class="highlight">Sparkling Clean</span></h1>
+    <p>Professional mobile boat cleaning and detailing services. We come directly to your dock and restore your boat’s shine.</p>
+    <a class="btn" href="#contact">Get Free Quote</a>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <p>Professional-grade cleaning for every type of vessel.</p>
+
+  <div class="services">
+    <div class="card">
+      <h3>Exterior Wash</h3>
+      <p>Salt removal, hull cleaning, and full exterior shine restoration.</p>
+    </div>
+    <div class="card">
+      <h3>Interior Detailing</h3>
+      <p>Seats, flooring, storage compartments and deep sanitation cleaning.</p>
+    </div>
+    <div class="card">
+      <h3>Wax & Protection</h3>
+      <p>Long‑lasting wax coating to protect against sun and water damage.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Request a Quote</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Boat size, location, and service needed"></textarea>
+    <button type="submit">Send Request</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 SparkleBoat | Professional Boat Cleaning</p>
+</footer>
+
+</body>
+</html>
